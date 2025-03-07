@@ -9,13 +9,22 @@ class Database:
         self.users = self.db.users
         
         
-    def get_user(self, user_id):
+    def save_answer(self, user_id: int, data: dict):
+        try:
+            self.users.update_one(
+                {"user_id": user_id},
+                {"$set": data},
+                upsert=True
+            )
+            return True
+        except Exception as e:
+            print(f"Database error: {e}")
+            return False
+
+    def get_user_data(self, user_id: int):
         return self.users.find_one({"user_id": user_id})
-    
-    def update_user(self, user_id, data):
-        return self.users.update_one({"user_id": user_id}, {"$set": data}, upsert=True)
-    
-    def get_dump(self):
-        return list(self.users.find({}, {"_id": 0}))
+
+    def clear_data(self, user_id: int):
+        self.users.delete_one({"user_id": user_id})
             
 db = Database()
