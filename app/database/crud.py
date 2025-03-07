@@ -1,12 +1,12 @@
 from pymongo import MongoClient
-from config import config
+from config.settings import CONFIG
 
 
 class Database:
     def __init__(self):
-        self.client = MongoClient(config.MONGO_URI)
-        self.db = self.client["survey"]
-        self.users = self.db["users"]
+        self.client = MongoClient(CONFIG.MONGO_URI) 
+        self.db = self.client.survey_bot
+        self.users = self.db.users
         
         
     def get_user(self, user_id):

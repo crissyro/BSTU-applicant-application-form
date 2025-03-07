@@ -14,6 +14,6 @@ async def start_cmd(message: Message):
 
 @start_router.callback_query(F.data == "start_survey")
 async def start_survey(callback: CallbackQuery, state: FSMContext):
-    await db.update_user(callback.from_user.id, {})
+    db.update_user(callback.from_user.id, {})
     await state.set_state(SurveyStates.gender)
     await callback.message.edit_text("Выберите ваш пол:", reply_markup=gender_kb())
