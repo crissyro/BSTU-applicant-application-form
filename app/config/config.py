@@ -1,10 +1,12 @@
-import os
-from aiogram import Bot
-from aiogram.fsm.storage.memory import MemoryStorage
-from dotenv import load_dotenv
+from pydantic_settings import BaseSettings
 
-load_dotenv()
+class Settings(BaseSettings):
+    BOT_TOKEN: str
+    MONGO_URI: str
+    ADMIN_IDS: int
+    
+    class Config:
+        env_file = ".env"
+        env_file_encoding = 'utf-8'
 
-class Config:
-    bot = Bot(token=os.getenv('BOT_TOKEN'))
-    storage = MemoryStorage()
+config = Settings()
