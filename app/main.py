@@ -6,7 +6,7 @@ from config.config import Config
 async def main():
     logging.basicConfig(level=logging.INFO)
     
-    dp = Dispatcher(Config.bot, storage=Config.storage)
+    dp = Dispatcher(storage=Config.storage)
 
     # TODO: make handlers
     # Example:
@@ -21,3 +21,5 @@ async def main():
     except Exception as e:
         logging.error(f'Error occurred while polling the bot: {e}')
     
+if __name__ == '__main__':
+    asyncio.run(main())
