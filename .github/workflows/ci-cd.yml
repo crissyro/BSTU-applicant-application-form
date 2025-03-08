@@ -22,6 +22,16 @@ jobs:
           sudo chmod +x /usr/local/bin/docker-compose
           docker-compose --version 
 
+      - name: Check if docker-compose.yml exists
+        run: |
+          if [ ! -f "./app/docker-compose.yml" ]; then
+            echo "docker-compose.yml not found!"
+            exit 1
+          else
+            echo "docker-compose.yml found!"
+          fi
+
       - name: Build and deploy with Docker Compose
         run: |
-          docker-compose -f /app/docker-compose.yml up --build -d 
+          docker-compose -f ./app/docker-compose.yml up --build -d
+ 
