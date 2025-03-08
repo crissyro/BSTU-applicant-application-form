@@ -16,7 +16,6 @@
 - **Database**: MongoDB
 - **Environment management**: dotenv for environment variables
 - **Containerization**: Docker (if used)
-- **Deployment**: VPS, AWS, Google Cloud, Heroku, etc.
 
 ## 🛠 Installation and Setup
 ### 1️⃣ Clone the Repository
