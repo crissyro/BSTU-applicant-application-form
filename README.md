@@ -63,4 +63,4 @@ The bot can be deployed using:
 This project is distributed under the MIT License.
 
 ---
-🤝 **Contact**: [Telegram](https://t.me/your_username) | [GitHub](https://github.com/your-username)
+🤝 **Contact**: [Telegram](https://t.me/crissyro) | [GitHub](https://github.com/crissyro)
