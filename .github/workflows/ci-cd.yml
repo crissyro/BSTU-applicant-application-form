@@ -30,6 +30,9 @@ jobs:
           else
             echo "docker-compose.yml found!"
           fi
+      - name: Create .env file
+        run: |
+          echo "BOT_TOKEN=${{ secrets.BOT_TOKEN }}" > ./app/.env
           
       - name: Set up environment variables
         run: echo "BOT_TOKEN=${{ secrets.BOT_TOKEN }}" >> $GITHUB_ENV
