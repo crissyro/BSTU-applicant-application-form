@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  bot:
+    build: .
+    environment:
+      - BOT_TOKEN=$(BOT_TOKEN)
+      - MONGO_URI=$(MONGO_URI)
+      - ADMIN_IDS=$(ADMIN_IDS)
+    depends_on:
+      mongodb:
+        condition: service_healthy
+
+  mongodb:
+    image: mongo:latest
+    restart: always
+    container_name:  mongodb
+    volumes:
+      - mongodb_data:/data/db
+    environment:
+       MONGO_INITDB_ROOT_USERNAME: root
+       MONGO_INITDB_ROOT_PASSWORD: user
+    healthcheck:  
+      test: echo 'db.runCommand("ping").ok' | mongosh localhost:27017/test --quiet
+      interval: 5s
+      timeout: 5s
+      retries: 5
+      
+volumes:
+  mongodb_data:
