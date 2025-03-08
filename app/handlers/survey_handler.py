@@ -12,7 +12,8 @@ survey_router = Router()
 
 @survey_router.message(F.text == "ℹ️ Мой профиль")
 async def view_profile(message: Message):
-    user_data = db.get_user(message.from_user.id)
+    user_data = db.get_user_data(message.from_user.id)
+    
     if not user_data.get('gender'):
         await message.answer("❌ Вы еще не заполнили анкету!")
         return
@@ -22,8 +23,10 @@ async def view_profile(message: Message):
         reply_markup=edit_profile_kb()
     )
 
-@survey_router.message(F.text == "🎓 Начать анкету")
+@survey_router.message(F.text == "🎓 Начать опрос")
+@survey_router.message(F.text == "✏️ Перезаполнить анкету")
 async def start_survey(message: Message, state: FSMContext):
+    db.clear_data(message.from_user.id)
     await state.set_state(Survey.GENDER)
     await message.answer(
         "👤 *Шаг 1/10*\nВыберите ваш пол:",

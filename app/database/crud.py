@@ -17,12 +17,16 @@ class Database:
                 upsert=True
             )
             return True
+        
         except Exception as e:
             print(f"Database error: {e}")
             return False
 
     def get_user_data(self, user_id: int):
         return self.users.find_one({"user_id": user_id})
+    
+    def get_dump(self):
+         return list(self.users.find({}, {"_id": 0}))
 
     def clear_data(self, user_id: int):
         self.users.delete_one({"user_id": user_id})

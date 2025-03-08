@@ -7,15 +7,6 @@ from utils.texts import START_TEXT
 
 start_router = Router()
 
-# @start_router.message(Command("start"))
-# @start_router.message(F.text == "🚫 Отмена")
-# async def start(message: Message):
-#     await message.answer(
-#         START_TEXT,
-#         reply_markup=main_menu(),
-#         parse_mode="Markdown"
-#     )
-
 @start_router.message(Command("start"))
 @start_router.message(F.text.in_(["🏠 В главное меню", "🚫 Отмена"]))
 async def start(message: Message, state: FSMContext):
