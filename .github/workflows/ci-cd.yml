@@ -20,8 +20,8 @@ jobs:
         run: |
           sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
           sudo chmod +x /usr/local/bin/docker-compose
-          docker-compose --version  # Проверка успешной установки
+          docker-compose --version 
 
       - name: Build and deploy with Docker Compose
         run: |
-          docker-compose -f docker-compose.yml up --build -d  # Сборка и запуск контейнеров в фоновом режиме (-d)
+          docker-compose -f /app/docker-compose.yml up --build -d 
