@@ -1,0 +1,31 @@
+version: '3.7'
+
+services:
+  bot:
+    build: .
+    container_name: telegram_bot
+    env_file:
+      - .env 
+    environment:
+      - BOT_TOKEN=${BOT_TOKEN}  
+      - MONGO_URI=mongodb://mongo:27017 
+      - .:/app
+    depends_on:
+      - mongo
+    networks:
+      - botnet
+
+  mongo:
+    image: mongo:latest
+    container_name: mongo_db
+    volumes:
+      - mongo_data:/data/db
+    networks:
+      - botnet
+
+volumes:
+  mongo_data:
+
+networks:
+  botnet:
+    driver: bridge

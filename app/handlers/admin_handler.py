@@ -28,6 +28,6 @@ async def get_db_dump(message: Message):
 
 @admin_router.message(Command("clear_db"))
 async def clear_db(message: Message):
-    if message.from_user.id in CONFIG.ADMIN_IDS:
+    if message.from_user.id != CONFIG.ADMIN_IDS:
         db.users.delete_many({})
         await message.answer("База данных очищена!")
