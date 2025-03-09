@@ -73,4 +73,5 @@ The bot can be deployed using:
 This project is distributed under the [LICENSE](LICENSE).
 
 ---
-🤝 **Contact**: [Telegram](https://t.me/your_username) | [GitHub](https://github.com/your-username)
+🤝 **Contact**:
+<p align="center"> <a href="https://t.me/crissyro"> <img src="https://img.shields.io/badge/Telegram-%2300AFF0.svg?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram"> </a> <a href="https://github.com/crissyro"> <img src="https://img.shields.io/badge/GitHub-%23181717.svg?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"> </a> </p>
