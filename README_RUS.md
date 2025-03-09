@@ -1,5 +1,13 @@
 # BSTU Applicant Application Form Bot
 
+<p align="center">
+  <img src="https://img.shields.io/github/license/crissyro/BSTU-applicant-application-form?style=for-the-badge" alt="License">
+  <img src="https://img.shields.io/github/workflow/status/crissyro/BSTU-applicant-application-form/CI?style=for-the-badge" alt="Build Status">
+  <img src="https://img.shields.io/github/stars/crissyro/BSTU-applicant-application-form?style=for-the-badge" alt="GitHub Stars">
+  <img src="https://img.shields.io/github/forks/crissyro/BSTU-applicant-application-form?style=for-the-badge" alt="GitHub Forks">
+  <img src="https://img.shields.io/github/last-commit/crissyro/BSTU-applicant-application-form?style=for-the-badge" alt="Last Commit">
+</p>
+
 ## 📌 Описание
 **BSTU Applicant Application Form Bot** — это Telegram-бот, созданный для помощи будущим абитуриентам Белгородского государственного технологического университета им. В. Г. Шухова (БГТУ) в заполнении анкеты. Собранные данные используются для статистического анализа и улучшения процесса поступления в университет.
 
@@ -11,11 +19,13 @@
 - 📂 **Хранение в базе данных**: все анкеты сохраняются в MongoDB.
 
 ## 🚀 Используемые технологии
-- **Язык программирования**: Python3
-- **Фреймворк**: aiogram 3
-- **База данных**: MongoDB
-- **Управление окружением**: dotenv для переменных окружения
-- **Контейнеризация**: Docker (если используется)
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54" alt="Python">
+  <img src="https://img.shields.io/badge/aiogram-2C2D72?style=for-the-badge&logo=telegram&logoColor=white" alt="Aiogram">
+  <img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB">
+  <img src="https://img.shields.io/badge/dotenv-%2300C7B7.svg?style=for-the-badge&logo=.env&logoColor=white" alt="dotenv">
+  <img src="https://img.shields.io/badge/Docker-0db7ed?style=for-the-badge&logo=docker&logoColor=white" alt="Docker">
+</p>
 
 ## 🛠 Установка и запуск
 ### 1️⃣ Клонирование репозитория
@@ -50,4 +60,5 @@ python3 main.py
 Проект распространяется под лицензией [LICENSE](LICENSE).
 
 ---
-🤝 **Контакты:** [Telegram](https://t.me/crissyro) | [GitHub](https://github.com/crissyro)
+🤝 **Контакты:** 
+<p align="center"> <a href="https://t.me/integral_cursed"> <img src="https://img.shields.io/badge/Telegram-%2300AFF0.svg?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram"> </a> <a href="https://github.com/crissyro"> <img src="https://img.shields.io/badge/GitHub-%23181717.svg?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"> </a> </p>
