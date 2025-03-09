@@ -19,11 +19,14 @@
 - 📂 **Database storage**: all forms are stored in MongoDB.
 
 ## 🚀 Technologies Used
-- **Programming Language**: Python3
-- **Framework**: aiogram 3
-- **Database**: MongoDB
-- **Environment management**: dotenv for environment variables
-- **Containerization**: Docker (if used)
+## 🚀 Technologies Used
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54" alt="Python">
+  <img src="https://img.shields.io/badge/aiogram-2C2D72?style=for-the-badge&logo=telegram&logoColor=white" alt="Aiogram">
+  <img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB">
+  <img src="https://img.shields.io/badge/dotenv-%2300C7B7.svg?style=for-the-badge&logo=.env&logoColor=white" alt="dotenv">
+  <img src="https://img.shields.io/badge/Docker-0db7ed?style=for-the-badge&logo=docker&logoColor=white" alt="Docker">
+</p>
 
 ## 🛠 Installation and Setup
 ### 1️⃣ Clone the Repository
