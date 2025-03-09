@@ -2,7 +2,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/github/license/crissyro/BSTU-applicant-application-form?style=for-the-badge" alt="License">
-  <img src="https://img.shields.io/github/workflow/status/crissyro/BSTU-applicant-application-form/CI?style=for-the-badge" alt="Build Status">
+  <img src="https://img.shields.io/github/actions/workflow/status/crissyro/BSTU-applicant-application-form/ci-cd.yml?style=for-the-badge" alt="Build Status">
   <img src="https://img.shields.io/github/stars/crissyro/BSTU-applicant-application-form?style=for-the-badge" alt="GitHub Stars">
   <img src="https://img.shields.io/github/forks/crissyro/BSTU-applicant-application-form?style=for-the-badge" alt="GitHub Forks">
   <img src="https://img.shields.io/github/last-commit/crissyro/BSTU-applicant-application-form?style=for-the-badge" alt="Last Commit">
