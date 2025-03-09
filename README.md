@@ -11,7 +11,7 @@
 - 📂 **Database storage**: all forms are stored in MongoDB.
 
 ## 🚀 Technologies Used
-- **Programming Language**: Python
+- **Programming Language**: Python3
 - **Framework**: aiogram 3
 - **Database**: MongoDB
 - **Environment management**: dotenv for environment variables
@@ -38,7 +38,7 @@ MONGO_URI=your_mongodb_connection_string
 
 ### 4️⃣ Run the Bot
 ```sh
-python bot.py
+python3 main.py
 ```
 
 ## 📌 Usage
@@ -60,7 +60,7 @@ The bot can be deployed using:
 4. Submit a **pull request** 🚀
 
 ## 📜 License
-This project is distributed under the MIT License.
+This project is distributed under the [LICENSE](LICENSE).
 
 ---
 🤝 **Contact**: [Telegram](https://t.me/your_username) | [GitHub](https://github.com/your-username)
