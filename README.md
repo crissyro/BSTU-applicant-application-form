@@ -1,5 +1,13 @@
 # BSTU Applicant Application Form Bot
 
+<p align="center">
+  <img src="https://img.shields.io/github/license/your-username/BSTU-applicant-application-form?style=for-the-badge" alt="License">
+  <img src="https://img.shields.io/github/workflow/status/your-username/BSTU-applicant-application-form/CI?style=for-the-badge" alt="Build Status">
+  <img src="https://img.shields.io/github/stars/your-username/BSTU-applicant-application-form?style=for-the-badge" alt="GitHub Stars">
+  <img src="https://img.shields.io/github/forks/your-username/BSTU-applicant-application-form?style=for-the-badge" alt="GitHub Forks">
+  <img src="https://img.shields.io/github/last-commit/your-username/BSTU-applicant-application-form?style=for-the-badge" alt="Last Commit">
+</p>
+
 ## 📌 Description
 **BSTU Applicant Application Form Bot** is a Telegram bot designed to assist prospective applicants of **Belgorod State Technological University named after V. G. Shukhov (BSTU)** in filling out application forms. The collected data is used for statistical analysis and to improve the university's admission process.
 
