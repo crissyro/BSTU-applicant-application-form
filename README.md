@@ -19,7 +19,6 @@
 - 📂 **Database storage**: all forms are stored in MongoDB.
 
 ## 🚀 Technologies Used
-## 🚀 Technologies Used
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54" alt="Python">
   <img src="https://img.shields.io/badge/aiogram-2C2D72?style=for-the-badge&logo=telegram&logoColor=white" alt="Aiogram">
